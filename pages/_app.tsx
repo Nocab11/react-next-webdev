@@ -1,10 +1,11 @@
+import { AppProps } from "next/app";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Image from "next/image";
 import landscape from "../public/maxresdefault.jpg";
 import '../styles/globals.scss'
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
       <Layout>
           <Head>
