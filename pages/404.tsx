@@ -1,6 +1,5 @@
 import {useEffect} from "react";
 import {useRouter} from "next/router";
-import Heading from "../components/Heading";
 
 const Error = () => {
     const router = useRouter();
@@ -15,9 +14,7 @@ const Error = () => {
     }, [router])
 
     return (
-        <Heading text={"404? Somethis is going wrong///"}>
-
-        </Heading>
+        <h1>404? Somethis is going wrong///</h1>
     )
 }
 

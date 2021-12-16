@@ -1,4 +1,3 @@
-import Heading from "../components/Heading";
 import styles from "../styles/Home.module.scss"
 import Head from "next/head";
 import Socials from "../components/Socials";
@@ -23,18 +22,16 @@ export const getStaticProps = async () => {
     }
 
 
-
 };
 
-const Home = ({ socials }) => {
+const Home = ({socials}) => {
     return (
         <div className={styles.wrapper}>
             <Head>
                 <title>Тайл на главной</title>
             </Head>
-            <Heading text={"General page on spa"} tag="h3" />
             <p>Text general</p>
-            <Socials socials={socials} />
+            <Socials socials={socials}/>
         </div>
     )
 }

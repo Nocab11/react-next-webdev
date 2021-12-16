@@ -1,5 +1,4 @@
 import {GetStaticProps} from "next";
-import Heading from "../../components/Heading";
 import Link from "next/link";
 import Head from "next/head";
 import {contactType} from "../../types";
@@ -31,7 +30,6 @@ const Contacts:FC<contactTypeProps> = ({ contacts }) => {
             <Head>
                 <title>Тайл, все контакты</title>
             </Head>
-            <Heading text={"Все контакты"} tag="h3" />
             <ul>
                 {contacts && contacts.map(({id, name, email}) =>
                     <li key={id}>

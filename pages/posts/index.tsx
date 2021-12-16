@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Heading from "../../components/Heading";
 import Link from "next/link";
 
 export const getStaticProps = async () => {
@@ -23,7 +22,6 @@ const Posts = ({ posts }) => {
             <Head>
                 <title>Тайл с постами</title>
             </Head>
-            <Heading text={"Posts list"} />
             <ul>
                 {posts && posts.map(({id, title}) =>
                     <li key={id}>
